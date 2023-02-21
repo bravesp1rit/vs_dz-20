@@ -8,7 +8,7 @@ const calculation = function (liters){
     const priceOfPotato = 13;
     let calcPotatoNeeded = liters * PotatoNeededFor1Liter;
     let calcKgOfPotatoNeeded = calcPotatoNeeded / (1000 / averagePotatoWeight);
-    let calcFinalPrice = calcKgOfPotatoNeeded * priceOfPotato;
+    let calcFinalPrice = Math.ceil(calcKgOfPotatoNeeded * priceOfPotato);
     return calcFinalPrice;
 }
 
